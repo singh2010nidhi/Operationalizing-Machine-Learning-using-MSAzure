@@ -99,7 +99,7 @@ HTTP API Response for POST Operation -
 
 ![](images/Swagger%20POST%20Response.png)
 
-Models
+Models -
 
 ![](images/Swagger%20Model%20Default.png)
 
@@ -127,9 +127,51 @@ In this step we benchmark our model using Apache Bench to load-test our model. F
 
 ### Step 7: Create, Publish and Consume a Pipeline
 
+For this step, we will use `aml-pipelines-with-automated-machine-learning-step.ipynb` Notebook to create, publish and consume a Pipeline. Publishing a Pipeline will allow us to interact with it over HTTP.
 
+**Pipeline Runs**
+
+![](images/Pipeline%20Runs%20Completed.png)
+
+**Pipeline Endpoints**
+
+![](images/Pipeline%20Endpoints.png)
+
+**`new-experiment` Running**
+
+![](images/new-experiment%20Running.png)
+
+**`pipeline-rest-endpoint` Running**
+
+![](images/pipeline-rest-endpoint%20Running.png)
+
+**`new-experiment` Run Completed**
+
+![](images/new-experiment%20Run%20Completed.png)
+
+**`new-experiment` Run Detail Widget**
+
+![](images/Auto%20ML%20Run%20Detail%20Widget%201.png)
+
+**`pipeline-rest-endpoint` Run Completed**
+
+![](images/pipeline-rest-endpoint%20Run%20Completed.png)
+
+**`pipeline-rest-endpoint` Run Detail Widget**
+
+![](images/AutoML%20Run%20Detail%20Widget%202.png)
+
+**Published Pipeline Overview showing the the REST endpoints and the status `Active`**
+
+![](images/Published%20Pipeline%20Overview.png)
 
 ## Screen Recording
+
 Screen recording explaining the steps followed in the project can be viewed using this [Link](https://youtu.be/nQZ4gHd64Wg).
 
+## Future Work 
+
+- Class balancing - The dataset used for training the model was imbalanced with size of smallest class = 3692 out of 32950 training samples. This imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class. Thus the training data can be made more balanced to remove this bias.
+
+- Using Deep Learning to get better Accuracy.
 
